@@ -9,7 +9,7 @@ import edu.cuc.palabras.Palabra;
 import java.awt.HeadlessException;
 import java.util.Scanner;
 import javax.swing.JOptionPane;
-import javax.swing.JButton;      
+import javax.swing.JButton;
 
 /**
  *
@@ -200,7 +200,7 @@ public class FrmPalabras extends javax.swing.JFrame {
             JButton botonesDesabilitar[] = {cmdIngresarPalabra, cmdIngresarPalabra1};
 
             edu.cuc.palabras.Palabra.habilitarBotones(botonesHabilitar);
-            edu.cuc.palabras.Palabra.deshabilitarBotones(botonesDesabilitar);  
+            edu.cuc.palabras.Palabra.deshabilitarBotones(botonesDesabilitar);
         }
     }//GEN-LAST:event_cmdIngresarPalabra1ActionPerformed
 
@@ -219,8 +219,8 @@ public class FrmPalabras extends javax.swing.JFrame {
 
         JOptionPane.showMessageDialog(this, "El mayor es:" + palabraNueva.sinonimoMayorLongitud());
 
-        JButton botonesHabilitar[] = {cmdIngresarPalabra, cmdIngresarPalabra1};
-        JButton botonesDesabilitar[] = {cmdCantidad, cmdPromedio, cmdMayor};                
+        JButton botonesHabilitar[] = {cmdIngresarPalabra1};
+        JButton botonesDesabilitar[] = {cmdIngresarPalabra, cmdCantidad, cmdPromedio, cmdMayor};       
 
         edu.cuc.palabras.Palabra.habilitarBotones(botonesHabilitar);
         edu.cuc.palabras.Palabra.deshabilitarBotones(botonesDesabilitar);
@@ -237,14 +237,14 @@ public class FrmPalabras extends javax.swing.JFrame {
     }//GEN-LAST:event_txtPalabraKeyTyped
 
     private void txtSinonimoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtSinonimoKeyTyped
-       
-          char c = evt.getKeyChar();
+
+        char c = evt.getKeyChar();
 
         if (!Character.isLetter(c)) {
             getToolkit();
             evt.consume();
-        }   
-        
+        }
+
     }//GEN-LAST:event_txtSinonimoKeyTyped
 
     private void introducirPalabra() throws HeadlessException {
@@ -265,7 +265,7 @@ public class FrmPalabras extends javax.swing.JFrame {
         JOptionPane.showMessageDialog(this,
                 "Sinonimo ingresado en el sistema!",
                 "Confirmación",
-                JOptionPane.INFORMATION_MESSAGE);           
+                JOptionPane.INFORMATION_MESSAGE);
     }
 
     /**
